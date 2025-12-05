@@ -360,8 +360,9 @@
 1. Open Equipment Inspection submission
 2. Select Form Code A
 3. Observe loaded fields
-4. Change to Form Code B
-5. Observe field changes
+4. Fill in some form fields with test data
+5. Change to Form Code B
+6. Observe field changes and verify data from Form Code A is cleared
 
 **Expected Results:**
 
@@ -679,3 +680,44 @@
 2. Area dropdown shows only options under selected Sublocation
 3. Changing Location resets Sublocation and Area
 4. Dropdown hierarchy is maintained correctly
+
+---
+
+# Why i choose the test tools
+
+Since WeMine project is a multi-platform Application
+
+- Mobile App (WemMine) - likely iOS and Android (Native)
+- Web App (WeMineOffice)
+- Multiple Backend
+
+## Web Automation
+
+My Primary Choice: Playwright
+
+### Why Playwright
+
+1. It is support for modern web apps
+2. As far that i know, it is built in network interception (so suitable for testing offline mode)
+3. Possible to handle dynamic forms
+4. Cross-browser testing
+5. Better for testing progressive web apps with poor connectivity
+6. API testing capabilities built in
+
+## Mobile Testing (Native)
+
+My Choice: Appium
+
+### Why Appium
+
+1. Cross-platform (iOS & Android)
+2. As far that i know, it is possibe to test offline functionality
+3. Large community, so we can ask or theres a lot of documents or references
+
+## Backend Automation
+
+My Choice: Playwright
+
+## Why Playwright
+
+1. we can do API testing in playwright, so it is more efficient if we use 1 tool for cross testing
