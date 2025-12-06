@@ -11,6 +11,10 @@
     "test:signin": "playwright test tests/flow0-signin.spec.ts",
     "test:equipment": "playwright test tests/flow1-equipment.spec.ts",
     "test:hazard": "playwright test tests/flow2-hazard.spec.ts",
+    "test:api": "playwright test tests/api-*.spec.ts",
+    "test:api:signin": "playwright test tests/api-flow0-signin.spec.ts",
+    "test:api:equipment": "playwright test tests/api-flow1-equipment.spec.ts",
+    "test:api:hazard": "playwright test tests/api-flow2-hazard.spec.ts",
     "report": "playwright show-report",
     "codegen": "playwright codegen"
   },
